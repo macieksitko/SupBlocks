@@ -30,7 +30,7 @@ SECRET_KEY = '_yr7q$en+0x7y!k3f@2!i)dp*or9q^_t!-iko(00w4dc93q14='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fast-taiga-08823.herokuapp.com']
 
 
 # Application definition
