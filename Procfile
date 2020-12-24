@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT blockchain_app.wsgi:application
+web: waitress-serve --port=$PORT project.blockchain_app.wsgi:application
