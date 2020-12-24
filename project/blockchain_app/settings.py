@@ -30,7 +30,7 @@ SECRET_KEY = '_yr7q$en+0x7y!k3f@2!i)dp*or9q^_t!-iko(00w4dc93q14='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fast-taiga-08823.herokuapp.com']
+ALLOWED_HOSTS = ['fast-taiga-08823.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -133,9 +133,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Add these new lines
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'project/static'),
-)
+#STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'),)
 
 
 
