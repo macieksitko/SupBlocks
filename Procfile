@@ -1,1 +1,1 @@
-web: gunicorn blockchain_app.wsgi --log-file -
+web: waitress-serve --port=$PORT blockchain_app.wsgi:app
