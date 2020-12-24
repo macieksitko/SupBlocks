@@ -1,4 +1,4 @@
 {
     "git.ignoreLimitWarning": true,
-    "python.pythonPath": "C:\\Users\\macie\\anaconda3\\envs\\blockchain_website\\python.exe"
+    "python.pythonPath": "blockchain_website\\python.exe"
 }
