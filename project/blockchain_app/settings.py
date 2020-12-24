@@ -13,10 +13,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import datetime
 from dotenv import load_dotenv
-import django_heroku
 
 load_dotenv()
-django_heroku.settings(locals())
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -134,7 +132,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Add these new lines
-STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'),)
+#STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'),)
 
 
 
