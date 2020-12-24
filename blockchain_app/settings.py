@@ -147,4 +147,4 @@ LOGIN_URL = 'login'
 AUTH_USER_MODEL = 'users.UserProfile'
 
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
