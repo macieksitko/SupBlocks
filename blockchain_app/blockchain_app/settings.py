@@ -36,8 +36,8 @@ ALLOWED_HOSTS = ['fast-taiga-08823.herokuapp.com','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'blockchain_app.blockchain.apps.BlockchainConfig',
-    'blockchain_app.users.apps.UsersConfig',
+    'blockchain.apps.BlockchainConfig',
+    'users.apps.UsersConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'clearcache',
+    'waitress'
     ]
 
 MIDDLEWARE = [
