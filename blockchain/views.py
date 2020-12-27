@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .forms import ProducerForm,ShipperForm,DetailerForm,WholesalerForm,LinksMultiForm
+from .forms import ProducerForm,ShipperForm,DetailerForm,WholesalerForm
 from .models import ProducerModel,ShipperModel,DetailerModel,WholesalerModel
 from django.contrib import messages
 from rest_framework import generics,mixins
@@ -37,8 +37,16 @@ def add_product(request):
     tx_service.setup_contract(current_link)
 
     if request.method == 'POST':
-        form_class = LinksMultiForm(request.POST)
-        form_for_link= form_class[current_link]
+        if current_link == "producer":
+            form_for_link = ProducerForm(request.POST)
+        elif current_link == "shipper":
+            form_for_link = ShipperForm(request.POST)
+        elif current_link == "wholesaler":
+            form_for_link = WholesalerForm(request.POST)
+        elif current_link == "detailer":
+            form_for_link = DetailerForm(request.POST)
+        #form_class = LinksMultiForm(request.POST)
+        #form_for_link= form_class[current_link]
         
         if form_for_link.is_valid():
             tx_service.add_link(form_for_link)
@@ -49,8 +57,16 @@ def add_product(request):
             messages.success(request, 'You posted a form successfully')
             return redirect('blockchain-home')
     else:
-        form_class = LinksMultiForm()
-        form_for_link= form_class[current_link]
+        if current_link == "producer":
+            form_for_link = ProducerForm()
+        elif current_link == "shipper":
+            form_for_link = ShipperForm()
+        elif current_link == "wholesaler":
+            form_for_link = WholesalerForm()
+        elif current_link == "detailer":
+            form_for_link = DetailerForm()
+        #form_class = LinksMultiForm()
+        #form_for_link= form_class[current_link]
 
     return render(request,'blockchain/add_product.html',{'form': form_for_link})
 

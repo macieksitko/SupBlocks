@@ -1,8 +1,7 @@
 from django.forms import ModelForm
 from .models import Transaction
 from web3 import Web3
-from multiform import MultiForm
-
+#from betterforms.multiform import MultiModelForm
 
 
 class ProducerForm(ModelForm):
@@ -25,13 +24,13 @@ class DetailerForm(ModelForm):
         model = Transaction
         fields = ['product_id','common_name','country','quantity','company']
 
-class LinksMultiForm(MultiForm):
-    base_forms = {
-        'producer': ProducerForm,
-        'shipper': ShipperForm,
-        'wholesaler': WholesalerForm,
-        'detailer': DetailerForm,
-    }
+# class LinksMultiForm(MultiModelForm):
+#     form_classes = {
+#         'producer': ProducerForm,
+#         'shipper': ShipperForm,
+#         'wholesaler': WholesalerForm,
+#         'detailer': DetailerForm,
+#     }
     
 
 
