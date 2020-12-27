@@ -87,10 +87,24 @@ WSGI_APPLICATION = 'blockchain_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd246q5g3gj18mn',
+        'HOST': 'ec2-3-231-48-230.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'kpuxcrbmfcotpa',
+        'PASSWORD': '967c529cd20660be6f419084988e5236b47736763f282220a989a4fe7317262b',
     }
 }
+#postgres://kpuxcrbmfcotpa:967c529cd20660be6f419084988e5236b47736763f282220a989a4fe7317262b@ec2-3-231-48-230.compute-1.amazonaws.com:5432/d246q5g3gj18mn
+
+
+# settings for local db
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
