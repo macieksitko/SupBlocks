@@ -146,5 +146,5 @@ LOGIN_URL = 'login'
 
 AUTH_USER_MODEL = 'users.UserProfile'
 
-
+SESSION_ENGINE= 'django.contrib.sessions.backends.cached_db'
 django_heroku.settings(locals())
