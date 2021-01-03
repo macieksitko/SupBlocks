@@ -56,7 +56,7 @@ pytz==2020.5
 requests==2.24.0
 rlp==2.0.0a1
 rusty-rlp==0.1.15
-setuptools==51.0.0.post20201207
+#setuptools==51.0.0.post20201207
 six==1.15.0
 soupsieve==2.0.1
 sqlparse==0.4.1
