@@ -1,6 +1,6 @@
-# SupChain
+# SupBlock
 
-SupChain is a decentralized web application based on Ethereum blockchain. Application allows users to enter information about every stage of supply chain (in this case there are producer, wholesaler, shipper and detailer). User can also check entered information by product id.
+SupBlock is a decentralized web application based on Ethereum blockchain. Application allows users to enter information about every stage of supply chain (in this case there are producer, wholesaler, shipper and detailer). User can also check entered information by product id.
 
 
 # Table of context
