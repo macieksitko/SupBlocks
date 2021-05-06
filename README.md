@@ -20,7 +20,7 @@ To run the app locally you need to follow these steps.
 
 Clone this repository
 ```
-git clone https://github.com/macieksitko/Django-blockchain.git
+git clone https://github.com/macieksitko/SupBlocks.git
 ```
 
 Create new virtual environment
