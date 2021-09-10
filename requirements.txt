@@ -59,7 +59,7 @@ rusty-rlp==0.1.15
 #setuptools==51.0.0.post20201207
 six==1.15.0
 soupsieve==2.0.1
-sqlparse==0.4.1
+sqlparse==0.4.2
 toml==0.10.1
 toolz==0.10.0
 typed-ast==1.4.1
