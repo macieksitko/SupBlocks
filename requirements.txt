@@ -42,7 +42,7 @@ netaddr==0.8.0
 parsimonious==0.8.1
 Pillow==7.1.2
 pip==20.3.3
-protobuf==3.13.0
+protobuf==3.18.3
 psycopg2==2.8.6
 pycodestyle==2.6.0
 pycryptodome==3.9.8
