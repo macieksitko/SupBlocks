@@ -5,7 +5,7 @@ autopep8==1.5.4
 base58==2.0.1
 beautifulsoup4==4.9.1
 bitarray==1.2.2
-certifi==2020.12.5
+certifi==2022.12.7
 chardet==3.0.4
 colorama==0.4.4
 cytoolz==0.10.1
